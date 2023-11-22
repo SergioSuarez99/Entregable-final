@@ -1,0 +1,37 @@
+ <header>
+        <h1>Listado de Médicos</h1>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Número de Cédula</th>
+                <th>Número de Consultorio</th>
+                <th>Teléfono</th>
+                <th>Correo</th>
+                <th>Especialidad</th>
+                <th>Paciente</th>
+            </tr>
+        </thead>
+        <tbody id="cuerpo-tabla-medicos">
+            <!-- Se agrega el contenido dinamicamente por medio de Handlebars -->
+            {{#each resultado}}
+            <tr>
+                <td>{{nombres}}</td>
+                <td>{{apellidos}}</td>
+                <td>{{cedula}}</td>
+                <td>{{consultorio}}</td>
+                <td>{{telefono}}</td>
+                <td>{{correo}}</td>
+                <td>{{especialidad}}</td>
+            </tr>
+            {{/each}}
+            <!-- Puedes agregar más filas para mostrar más médicos -->
+        </tbody>
+    </table>
+    <button onclick="window.location.href='../index.html'" id="returnIndex">Volver al Menú de Inicio</button>
+    <footer>
+        <h3>Realizado por Sergio Suarez</h3>
+        
+    </footer>
