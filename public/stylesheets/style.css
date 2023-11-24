@@ -159,4 +159,6 @@ input[type="submit"]:hover {
           cursor: pointer;
           border-radius: 5px;}
 
-  
+          #botonContainer {
+            text-align: center;
+        }
